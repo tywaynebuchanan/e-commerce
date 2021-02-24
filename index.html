@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9ee43ffbd7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Renee Collections</title>
 </head>
@@ -13,10 +16,11 @@
         <div class="container">
             <div class="navbar">
                 <div class="logo">
-                    <img src="images/logo.png" width="125px" alt="">
+                    <a href="#"><img src="images/reneablacklogo.png" width="200px" alt=""></a>
                 </div>
                 <div class="nav">
-                    <ul>
+                    <ul id="menu-nav"> 
+                        <span id ="close-btn" class="close-btn"><i class="far fa-window-close"></i></span>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Products</a></li>
                         <li>
@@ -24,10 +28,12 @@
                         </li>
                         <li><a href="#">Contact</a></li>
                         <li><a href="#">Account</a></li>
+                       
                     </ul>
                     
                 </div>
                 <a href="#"><img src="images/shopping-cart.png" alt="shopping cart" width="30px" height="30px"></a>
+                <i class="fas fa-bars menu-icon" id="menu-btn"></i>
             </div>
             <div class="row">
                 <div class="col-2">
@@ -41,6 +47,352 @@
             </div>
     </div>
 </div>
+
+<!--Feateured Categories-->
+<div class="categories">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <img src="images/lace-front-1.jpg" alt="">
+                <h4>Lace Front</h4>
+            </div>
+            <div class="col-3">
+                <img src="images/makeup-1.jpg" alt="">
+                <h4>Lashes</h4>
+            </div>
+            <div class="col-3">
+                <img src="images/makeup-3.jpeg" alt="">
+                <h4>Make Up</h4>
+            </div>
+        </div>  
+    </div>
+</div>
+<!--Feateured Products-->
+    <div class="small-container">
+        <h2 class="title">Featured Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/lashes-1.jpeg" alt="">
+                <h4>Lashes</h4>
+                <div class="ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>JMD $1000</p>
+            </div>
+            <div class="col-4">
+                <img src="images/lashes-2.jpeg" alt="">
+                <h4>Lashes Again</h4>
+                <div class="ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>JMD $1000</p>
+            </div>
+            <div class="col-4">
+                <img src="images/lashes-3.jpeg" alt="">
+                <h4>Fake Hair</h4>
+                <div class="ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>JMD $1000</p>
+            </div>
+            <div class="col-4">
+                <img src="images/lashes-4.jpeg" alt="">
+                <h4>Fake Hair</h4>
+                <div class="ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>JMD $1000</p>
+            </div>
+        </div>
+        <h2 class="title">Latest Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/lace-wig1.jpeg" alt="">
+                <h4>Fake Hair</h4>
+                <div class="ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>JMD $1000</p>
+            </div>
+            <div class="col-4">
+                <img src="images/lace-wig1.jpeg" alt="">
+                <h4>Fake Hair</h4>
+                <div class="ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>JMD $1000</p>
+            </div>
+            <div class="col-4">
+                <img src="images/lace-wig1.jpeg" alt="">
+                <h4>Fake Hair</h4>
+                <div class="ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>JMD $1000</p>
+            </div>
+            <div class="col-4">
+                <img src="images/lace-wig1.jpeg" alt="">
+                <h4>Fake Hair</h4>
+                <div class="ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>JMD $1000</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/lace-wig1.jpeg" alt="">
+                <h4>Fake Hair</h4>
+                <div class="ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>JMD $1000</p>
+            </div>
+            <div class="col-4">
+                <img src="images/lace-wig1.jpeg" alt="">
+                <h4>Fake Hair</h4>
+                <div class="ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>JMD $1000</p>
+            </div>
+            <div class="col-4">
+                <img src="images/lace-wig1.jpeg" alt="">
+                <h4>Fake Hair</h4>
+                <div class="ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>JMD $1000</p>
+            </div>
+            <div class="col-4">
+                <img src="images/lace-wig1.jpeg" alt="">
+                <h4>Fake Hair</h4>
+                <div class="ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>JMD $1000</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/lace-wig1.jpeg" alt="">
+                <h4>Fake Hair</h4>
+                <div class="ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>JMD $1000</p>
+            </div>
+            <div class="col-4">
+                <img src="images/lace-wig1.jpeg" alt="">
+                <h4>Fake Hair</h4>
+                <div class="ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>JMD $1000</p>
+            </div>
+            <div class="col-4">
+                <img src="images/lace-wig1.jpeg" alt="">
+                <h4>Fake Hair</h4>
+                <div class="ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>JMD $1000</p>
+            </div>
+            <div class="col-4">
+                <img src="images/lace-wig1.jpeg" alt="">
+                <h4>Fake Hair</h4>
+                <div class="ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>JMD $1000</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Offers-->
+    <div class="it">
+    <div class="offer">
+        <div class="small-container">
+            <h2 class="title">Offers</h2>
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/offer-1.jpeg" class ="offer-img" alt="">
+                </div>
+                <div class="col-2">
+                    <p>Exclusive offers from Renea Hair Collections</p>
+                    <h1>Real Lashes</h1>
+                    <small>These lashes are made from real human hair that we 
+                        took from dead people. Prices as low as JMD $500.00</small> <br/> 
+                  <button class="btn-1">Buy now &#8594</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!--Testimonials-->
+    <div class="testimony">
+       <div class="small-container">
+           <div class="row">
+              <div class="col-3">
+                <i class="fas fa-quote-left"></i>
+                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem fugit totam quasi eum cum 
+                      temporibus. Aperiam officia esse eaque beatae, 
+                      porro vero exercitationem? Quisquam odit, consectetur dignissimos ut repudiandae unde?</p>
+                      <i class="fas fa-quote-right"></i>
+                      <div class="ratings">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <img src="images/lace-wig1.jpeg" alt="">
+                    <h3> Mackerel Offical</h3>
+              </div> 
+              <div class="col-3">
+                <i class="fas fa-quote-left"></i>
+                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem fugit totam quasi eum cum 
+                      temporibus. Aperiam officia esse eaque beatae, 
+                      porro vero exercitationem? Quisquam odit, consectetur dignissimos ut repudiandae unde?</p>
+                      <i class="fas fa-quote-right"></i>
+                      <div class="ratings">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <img src="images/lace-wig1.jpeg" alt="">
+                    <h3> Mackerel Offical</h3>
+              </div>  
+              
+              <div class="col-3">
+                <i class="fas fa-quote-left"></i>
+                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem fugit totam quasi eum cum 
+                      temporibus. Aperiam officia esse eaque beatae, 
+                      porro vero exercitationem? Quisquam odit, consectetur dignissimos ut repudiandae unde?</p>
+                      <i class="fas fa-quote-right"></i>
+                      <div class="ratings">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <img src="images/lace-wig1.jpeg" alt="">
+                    <h3> Mackerel Offical</h3>
+              </div>  
+           </div>
+       </div>
+    </div>
+
+    <!--footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>About Us</h3>
+                    <p> Renea Hair Collection is a Jamaican Makeup Brand catering to the diverse range of Women of Colour who cares 
+                        about the health of their skin and health of the environment.
+                        We also appeal to and support Women in Business and Black Owned Makeup Brands. <br>
+                        We are located in Kingston, Jamaica</p>
+                </div>
+
+                <div class="footer-col-2">
+                    <img src="images/reneablacklogo.png" alt="">
+                    <p>Good quality at its best</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                <ul>
+                    <li>Return Policy</li>
+                    <li>Blog Post</li>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Whatsapp</li>
+                    <li>Twitter</li>
+                </ul>
+                </div>
+
+                
+            </div>
+
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2020</p>
+    </div>
 </body>
 
 <script src="main.js "></script>
