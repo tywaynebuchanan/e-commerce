@@ -1,2 +1,2 @@
 # e-commerce
-[Click here](e-commerce/index.html)
+[Click here](index.html)
