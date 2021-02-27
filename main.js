@@ -2,7 +2,21 @@
 fetch("data.json")
 .then(response => response.json())
 .then(data => {
-    document.getElementsByTagName('p').innerText = data.productname
+    console.log(typeof data)
+    
+    data.forEach((element,i) => {
+        let row = document.createElement('div')
+        row.classList.add('row')
+        let col = document.createElement('div');
+        col.classList.add('col-4');
+        let img = document.createElement('img')
+        img.src = `/images/${element.image}.jpg`
+        let productName = document.createElement('h4')
+        productName.innerHTML = element.productName
+        col.appendChild(img)
+        row.appendChild(col)
+        document.getElementById('products').appendChild(row)
+    });
 }) 
 
 const navMenu = document.getElementById('menu-nav');
