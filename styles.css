@@ -11,6 +11,16 @@
     background:#F9F8F9;
  }
 
+ .sticky{
+     position: fixed;
+     background-color: pink;
+     left:0;
+     width: 100%;
+     transition: 0.5s;
+
+   
+ }
+
  .container{
      max-width: 1300px;
      margin: auto;
@@ -20,7 +30,7 @@
  .navbar{
      display: flex;
      align-items: center;
-     padding: 20px;
+     padding: 10px;
      
  }
  .logo{
@@ -153,14 +163,15 @@
  .title{
      text-align: center;
      margin: 0 auto 40px;
-     position: relative;
+     /* position: relative; */
      line-height: 60px;
      color: #555;
+     border-bottom: 5px solid palevioletred;
  }
 
  .title::after{
      content: '';
-     background: palevioletred;
+     background: ;
      width: 80px;
      height: 5px;
      border-radius: 5px;
@@ -181,10 +192,10 @@
     
 }
 
-.col-4:hover
+/* .col-4:hover
 {
     transform:translateY(-5px);
-}
+} */
 
 .offer{
     padding: 30px 0;
@@ -390,6 +401,11 @@ select:focus{
 /*media query*/
 @media only screen and (max-width: 800px){
 
+    .navbar .row{
+        padding-top: 0;
+        margin-top: 0;
+    }
+
     .nav ul{
         position: absolute;
         top: 70px;
@@ -420,11 +436,11 @@ select:focus{
         display: block;
     }
 
-    /* .col-2 img{
+    .col-2 img{
         display: none;
-    } */
+    }
     .row .col-2{
-        margin-top: 25px;
+        margin-top: 5px;
         text-align: center;
         
     }
@@ -471,6 +487,11 @@ select:focus{
 
     .cart {
         display: none;
+    }
+
+    .sticky{
+        position: relative;
+     
     }
 }
 
