@@ -1,23 +1,50 @@
 //Get Data from Json file
-// fetch("data.json")
-// .then(response => response.json())
-// .then(data => {
-//     console.log(typeof data)
-    
-//     data.forEach((element,i) => {
-//         let row = document.createElement('div')
-//         row.classList.add('row')
-//         let col = document.createElement('div');
-//         col.classList.add('col-4');
-//         let img = document.createElement('img')
-//         img.src = `/images/${element.image}.jpg`
-//         let productName = document.createElement('h4')
-//         productName.innerHTML = element.productName
-//         col.appendChild(img)
-//         row.appendChild(col)
-//         document.getElementById('products').appendChild(row)
-//     });
-// }) 
+
+const row = document.getElementById('row');
+const getData = async () =>{
+    const res = await fetch('data.json');
+    if(res.ok){
+        const data = await res.json();
+        data.forEach(product =>{
+          const div = document.getElementById("row");
+            div.innerHTML +=`
+            <div class = "col-4">
+            <a href="product-detail.html"><img src="images/${product.image}" alt=""></a>
+                <a href="product-detail.html"><h4>${product.productname}</h4></a>
+           <div class="ratings">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+           </div>
+           <p id="categories">${product.price}</p>`
+        })
+     }else{
+        console.log(`Err:${res.status}`)
+    }
+}
+getData();
+
+const getFeatCat = async () =>{
+    const featApi = fetch('data1.json');
+    const res = await featApi;
+    if(res.ok){
+        const data = await res.json();
+        data.forEach(product =>{
+            const div = document.getElementById('feat__cat')
+            div.innerHTML +=`<div class="col-3">
+            <img src="images/${product.image}" alt="">
+            <h4>${product.productname}</h4>
+        </div>`
+        
+     })
+    }else{
+        console.log(`Err:${res.status}`)
+    }
+}
+
+getFeatCat();
 
 const navMenu = document.getElementById('menu-nav');
 const closeBtn = document.getElementById('close-btn');

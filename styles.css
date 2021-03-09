@@ -2,8 +2,7 @@
      margin: 0;
      padding: 0;
      box-sizing: border-box;
-     
-   
+       
  }
  
  body{
@@ -171,9 +170,9 @@
      border-bottom: 5px solid palevioletred;
  }
 
- .title::after{
+ /* .title::after{
      content: '';
-     background: ;
+     background: white ;
      width: 80px;
      height: 5px;
      border-radius: 5px;
@@ -182,7 +181,7 @@
      left: 50%;
      transform: translateX(-50%);
 
- }
+ } */
 
  h4 {
      font-weight: normal;

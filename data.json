@@ -1,7 +1,32 @@
-[{
+[
+{
+    
     "productname":"Fake Boobs",
     "price":"JMD $1000",
-    "image": "lace-front-1",
-    "ratings": 4
+    "image":"lace-wig1.jpeg",
+    "ratings":4
     
-}]
+},
+{
+    "productname":"Fake Boobs",
+    "price":"JMD $1000",
+    "image":"lace-wig1.jpeg",
+    "ratings":4
+    
+},
+{
+    "productname":"Fake Boobs",
+    "price":"JMD $1000",
+    "image":"lace-wig1.jpeg",
+    "ratings":4
+    
+},
+{
+    "productname":"Fake Boobs",
+    "price":"JMD $1000",
+    "image":"lace-wig1.jpeg",
+    "ratings":4
+    
+}
+]
+
